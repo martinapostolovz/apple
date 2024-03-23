@@ -1,42 +1,202 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+    margin: 0;
+    position: 0;
+    overflow-x: hidden;
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.products {
+    display: flex;
+    justify-content: center;
+    transform: translateY(10px);
+    gap: 40px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.button-header {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.5s;
+
+
 }
 
-.card {
-  padding: 2em;
+.button-header:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
-.read-the-docs {
-  color: #888;
+#iphone {
+    width: 80px;
+    height: 30px;
+
+}
+
+#macbook {
+    width: 90px;
+    height: 30px;
+
+}
+
+#watch {
+    width: 80px;
+    height: 30px;
+
+
+}
+
+#ipad {
+    width: 80px;
+    height: 30px;
+
+}
+
+#vision {
+    width: 80px;
+    height: 30px;
+
+}
+
+#new {
+    width: 80px;
+    height: 30px;
+    text-decoration: underline;
+}
+
+.vision-pro {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+    height: 300px;
+    background-color: rgb(228, 228, 228);
+    transform: translateY(80px);
+    border-radius: 10px;
+}
+
+.image-background {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(10px);
+    width: 97%;
+    height: 280px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.new-background-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(87, 128, 204);
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.vision-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    transform: translateY(-125px);
+
+}
+
+@media (max-width: 480px) {
+    .vision-image {
+        width: 320px;
+        transform: translateY(-50px);
+
+
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:100000px) {
+    .mobile-products {
+        display: none;
+
+    }
+
+
+}
+
+@media only screen and (min-width:0px) and (max-width:800px) {
+    .products {
+        display: none;
+    }
+
+
+
+
+    .products-mobile-background {
+        width: 150px;
+        height: 30px;
+        background-color: rgb(44, 44, 44);
+        text-align: center;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: 0.5s;
+
+    }
+
+    .products-mobile-background:hover {
+        height: 250px;
+    }
+
+    .line {
+        transform: translateY(7px);
+        margin-left: auto;
+        margin-right: auto;
+        width: 22px;
+        height: 3px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 2px;
+    }
+
+    .button-header-mob {
+        width: 94%;
+        height: 26px;
+        margin-top: 10px;
+        transform: translateY(10px);
+        color: white;
+        background: linear-gradient(to right, black, rgb(26, 25, 25));
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+
+    }
+
+    .button-header-mob:hover {
+        background: white;
+        color: black;
+    }
+
+    .products-mobile-background {
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateY(10px);
+    }
 }
