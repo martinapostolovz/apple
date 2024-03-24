@@ -36,6 +36,7 @@ function App() {
           <div className='image-background'>
             <div className='new-background-text'>New</div>
             <img className='vision-image' src={"https://www.apple.com/newsroom/images/media/introducing-apple-vision-pro/Apple-WWDC23-Vision-Pro-glass-230605.jpg.landing-big_2x.jpg"} />
+
           </div>
           <div className='iphones-flex'>
           </div>
@@ -45,19 +46,19 @@ function App() {
           <div className='sec-background-iphones'>
             <div className='iphone-background'>
               <div className='new-background-text'>New</div>
-              <img className='iphone15' src="./images/iphone15-black.png" alt="" />
+              <img className='iphone15' src="/images/iphone15-black.png" alt="" />
               <br />
               <p className='text-name-phone'>Iphone 15 </p>
             </div>
             <div className='iphone-background'>
               <div className='new-background-text'>New</div>
-              <img className='iphone15' src="./images/iphone_15_pro_max.png" alt="" />
+              <img className='iphone15' src="/images/iphone_15_pro_max.png" alt="" />
               <br />
               <p className='text-name-phone'>Iphone 15 PRO</p>
             </div>
             <div className='iphone-background'>
               <div className='new-background-text'>New</div>
-              <img className='iphone15' src="./images/iphone_15_pro_max.png" />
+              <img className='iphone15' src="/images/iphone_15_pro_max.png" />
               <br />
               <p className='text-name-phone'>Iphone 15 PRO MAX</p>
             </div>
